@@ -3,78 +3,43 @@
 ## AIM
 To develop an image classification model using transfer learning with VGG19 architecture for the given dataset.
 
-## THEORY
-
-
-## Neural Network Model
-Include the neural network model diagram.
 
 ## DESIGN STEPS
-### STEP 1: 
+# Data Preparation and Preprocessing
+Collected and organized the dataset into train and test folders.
 
-Write your own steps
+Applied image transformations such as resizing to 224×224 and converting to tensor for VGG19 compatibility.
 
-### STEP 2: 
+Loaded the data using ImageFolder and DataLoader for efficient batching and shuffling.
 
+# Model Design (Transfer Learning Setup)
+Loaded the pre-trained VGG19 model from torchvision.models.
 
+Replaced the final fully connected layer (classifier[6]) to match the number of output classes in the dataset.
 
-### STEP 3: 
+Froze convolutional layers to retain pre-learned features and fine-tuned only the classifier part.
 
+# Loss Function and Optimizer Selection
+Used CrossEntropyLoss for multi-class image classification.
 
+Optimized the classifier layer parameters using Adam optimizer with a learning rate of 0.001.
 
-### STEP 4: 
+# Model Training and Validation
+Trained the model for multiple epochs, recording both training and validation losses.
 
+Visualized the loss curves to monitor convergence and detect overfitting or underfitting trends.
 
+# Evaluation and Prediction
+Evaluated the model performance using accuracy, confusion matrix, and classification report.
 
-### STEP 5: 
+Tested predictions on single images to visually confirm model accuracy and reliability.
 
-
-
-### STEP 6: 
-
-
-
-
-
-## PROGRAM
-
-### Name:
-
-### Register Number:
-
-```python
-# Load Pretrained Model and Modify for Transfer Learning
-
-
-
-# Modify the final fully connected layer to match the dataset classes
-
-
-
-# Include the Loss function and optimizer
-
-
-
-# Train the model
-
-
-```
-
-### OUTPUT
-
-## Training Loss, Validation Loss Vs Iteration Plot
-
-Include your plot here
-
-## Confusion Matrix
-
-Include confusion matrix here
-
-## Classification Report
-Include classification report here
-
-### New Sample Data Prediction
-Include your sample input and output here
 
 ## RESULT
-Include your result here
+The pretrained VGG19 model was successfully fine-tuned on the custom image dataset.
+
+The model achieved high training and testing accuracy, showing effective transfer learning performance.
+
+The confusion matrix and classification report confirmed good class-wise prediction.
+
+Sample test images were correctly classified, verifying the model’s ability to generalize well.
