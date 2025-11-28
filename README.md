@@ -34,6 +34,11 @@ Evaluated the model performance using accuracy, confusion matrix, and classifica
 
 Tested predictions on single images to visually confirm model accuracy and reliability.
 
+## Output:
+
+<img width="848" height="686" alt="image" src="https://github.com/user-attachments/assets/c9335072-faf6-46c0-a295-46ba89ccfdda" />
+<img width="857" height="780" alt="image" src="https://github.com/user-attachments/assets/bfb34e94-54ed-4f22-a192-2b790e8952b4" />
+<img width="668" height="791" alt="image" src="https://github.com/user-attachments/assets/66c619cb-2018-4ff7-95f6-de668f9de10e" />
 
 ## RESULT
 The pretrained VGG19 model was successfully fine-tuned on the custom image dataset.
